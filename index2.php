@@ -12,7 +12,7 @@ class Persona{
 	}
 	
 	public function mostrar(){
-		for($i=0; $i<=count($this->nombre); $i++){
+		for($i=0; $i<count($this->nombre); $i++){
 			$this->formato($this->nombre[$i],$this->apellido[$i]);
 		}
 	}
@@ -26,4 +26,5 @@ $persona=new Persona();
 $persona->guardar("Don","Don");
 $persona->guardar("Andres","Ramos");
 $persona->mostrar();
+
 ?>
